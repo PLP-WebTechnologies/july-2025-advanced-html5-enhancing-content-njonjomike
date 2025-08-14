@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced HTML5 Page & Form</title>
+</head>
+<body>
+
+<header>
+    <h1>HTML5 Enhanced Content & Form</h1>
+    <p>This page demonstrates lists, tables, media embedding, and a fully functional HTML5 form with native validation.</p>
+</header>
+
+<main>
+    <!-- Lists Section -->
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>Graphic Design</li>
+            <li>SEO Optimization</li>
+        </ul>
+
+        <h3>Project Steps</h3>
+        <ol>
+            <li>Gather Requirements</li>
+            <li>Design & Prototype</li>
+            <li>Development</li>
+            <li>Testing & Deployment</li>
+        </ol>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+        <h2>Price List</h2>
+        <table border="1">
+            <caption>Service Packages & Prices</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Package</th>
+                    <th scope="col">Features</th>
+                    <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic</td>
+                    <td>3 Pages, Basic SEO</td>
+                    <td>$200</td>
+                </tr>
+                <tr>
+                    <td>Standard</td>
+                    <td>5 Pages, Advanced SEO, Mobile Friendly</td>
+                    <td>$500</td>
+                </tr>
+                <tr>
+                    <td>Premium</td>
+                    <td>Unlimited Pages, Full SEO, Mobile Friendly, Support</td>
+                    <td>$1000</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Media Section -->
+    <section>
+        <h2>Media Showcase</h2>
+        <img src="https://via.placeholder.com/800x300" alt="Sample Website Screenshot" width="600">
+        <br>
+        <video controls width="600">
+            <source src="assignment video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <br>
+        <audio controls>
+            <source src="sample-audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+        <h2>Contact Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="John Doe" required minlength="3">
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+254712345678" pattern="^\+?[0-9]{10,15}$" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Service Details</legend>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">--Please choose an option--</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">Graphic Design</option>
+                    <option value="seo">SEO Optimization</option>
+                </select>
+
+                <label for="budget">Estimated Budget (KSH):</label>
+                <input type="number" id="budget" name="budget" min="50" max="10000" step="50" required>
+
+                <label for="date">Preferred Start Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="details">Project Details:</label>
+                <textarea id="details" name="details" rows="4" placeholder="Describe your project..." required></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Account Information</legend>
+                <label for="username">Create Username:</label>
+                <input type="text" id="username" name="username" pattern="^[A-Za-z0-9_]{5,15}$" placeholder="5-15 letters/numbers" required>
+
+                <label for="password">Create Password:</label>
+                <input type="password" id="password" name="password" minlength="6" required>
+
+                <label>
+                    <input type="checkbox" name="terms" required> I agree to the terms and conditions.
+                </label>
+            </fieldset>
+
+            <input type="submit" value="Submit Form">
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 HTML5 Assignment by Michael Njonjo</p>
+</footer>
+
+</body>
+</html>
